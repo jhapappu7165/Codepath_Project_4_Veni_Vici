@@ -1,0 +1,115 @@
+// App.css
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('/your-background.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent overlay */
+  padding: 30px;
+  gap: 20px;
+}
+
+.ban-list,
+.history {
+  flex: 1;
+  max-width: 250px;
+  background-color: #e0e0e0;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.main-display {
+  flex: 2;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  color: black;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.dog-card img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.attributes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.attribute-button {
+  background-color: #d4a373;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+.attribute-button:hover {
+  background-color: #b27b4c;
+}
+
+.ban-button {
+  background-color: #c84b31;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.ban-button:hover {
+  background-color: #a33322;
+}
+
+.ban-tag {
+  background-color: #a84545;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin: 5px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.discover-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #40916c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.discover-button:hover {
+  background-color: #2d6a4f;
+}
