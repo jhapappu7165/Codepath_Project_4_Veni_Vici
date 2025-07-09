@@ -1,115 +1,120 @@
-// App.css
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('/your-background.jpg'); /* Replace with your image path */
+  background-image: url('https://plus.unsplash.com/premium_photo-1668114375111-e90b5e975df6?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #fff;
+  min-height: 100vh;
 }
 
 .app-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent overlay */
-  padding: 30px;
-  gap: 20px;
+  gap: 50px;
+  padding: 50px;
+  box-sizing: border-box;
 }
 
-.ban-list,
-.history {
-  flex: 1;
-  max-width: 250px;
-  background-color: #e0e0e0;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  overflow-y: auto;
-  max-height: 90vh;
-}
-
-.main-display {
-  flex: 2;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 12px;
-  padding: 30px;
+.main-content {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 16px;
+  width: 600px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
   text-align: center;
-  color: black;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.main-content h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 12px auto;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.dog-card {
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 16px;
 }
 
 .dog-card img {
-  width: 300px;
+  max-width: 35%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto;
+}
+
+.dog-card h2 {
   margin-top: 20px;
+  font-size: 24px;
+  color: #fff;
 }
 
-.attributes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 10px;
-}
-
-.attribute-button {
-  background-color: #d4a373;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s;
-}
-
-.attribute-button:hover {
-  background-color: #b27b4c;
-}
-
-.ban-button {
-  background-color: #c84b31;
-  color: white;
-  margin-top: 10px;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 12px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.ban-button:hover {
-  background-color: #a33322;
-}
-
-.ban-tag {
-  background-color: #a84545;
-  color: white;
-  border-radius: 6px;
-  padding: 6px 12px;
-  margin: 5px 0;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.discover-button {
-  margin-top: 20px;
-  padding: 12px 20px;
+.dog-card p {
+  margin: 8px 0;
   font-size: 16px;
-  background-color: #40916c;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.3s;
+  color: #ddd;
 }
 
-.discover-button:hover {
-  background-color: #2d6a4f;
+.ban-list {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #222;
+  padding: 25px;
+  border-radius: 16px;
+  max-height: 500px;
+  overflow-y: auto;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.ban-list h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ban-list button {
+  background-color: #c0392b;
+  color: #fff;
+  font-weight: bold;
+  margin: 8px auto;
+  width: 90%;
+  max-width: 160px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.ban-list button:hover {
+  background-color: #a93226;
 }
